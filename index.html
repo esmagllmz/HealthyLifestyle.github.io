@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Ana Sayfa | E-Healthystyle</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/price-range.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+ <style>
+.duyurular {
+            border: none;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        .duyuru {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            float: left;
+            width: 16%; /* Duyuruların yatayda kapladığı alanı ayarlayabilirsiniz */
+            margin: 20px;
+            text-align: center;
+             
+
+        }
+
+        .duyuru img {
+            max-width: 100%;
+            border-radius: 5px;
+            width: 150px; im genişliği */
+            height: 150px; /* Resim yüksekliği */
+
+        
+        }
+
+        .acilir-pencere {
+            display: none;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+            margin-top: 10px;
+            
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    font-family: Arial, sans-serif; 
+    z-index: 999;
+
+
+        }
+        
+        .acilir-icerik {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+
+
+        .btn-acilir {
+            cursor: pointer;
+            color: #ffffff;
+            
+            border: none;
+    border-radius: 5px; /* İsteğe bağlı: Çerçeve köşe yuvarlama */
+    background-color: #ffA500;
+    padding: 5px 10px; /* İsteğe bağlı: Çerçeve içinde içerikten uzaklık */
+    display: inline-block; /* İsteğe bağlı: Çerçeve içindeki alanı sınırla */
+        }
+</style>
+   
+</head><!--/head-->
+
+<body>
+	<header id="header"><!--header-->
+		
+		
+		<div class="header-middle"><!--header-middle-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="logo pull-left">
+							<a href="index.html"><img src="images/home/logo.png" alt="" /></a>
+						</div>
+						
+					</div>
+					<div class="col-sm-9">
+						<div class="shop-menu pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href="sepet.html"><i class="fa fa-shopping-cart"></i> Sepet</a></li>
+								<li><a href="giris.html"><i class="fa fa-lock"></i> Giriş</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-middle-->
+	
+		<div class="header-bottom"><!--header-bottom-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="mainmenu pull-left">
+							<ul class="nav navbar-nav collapse navbar-collapse">
+								<li><a href="index.html" class="active">Anasayfa</a></li>
+								<li class="dropdown"><a href="#">Ürünlerimiz<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="organikurunler.html">Organik Ürünler</a></li>
+										<li><a href="glutensizurunler.html">Glutensiz Ürünler</a></li> 
+										<li><a href="veganurunler.html">Vegan ürünler</a></li> 
+										
+                                    </ul>
+                                </li> 
+								<li class="dropdown"><a href="#">Birimlerimiz<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="uretim.html">Üretim</a></li>
+										<li><a href="satisvedagitim.html">Satış ve Dağıtım</a></li>
+                                    </ul>
+                                </li> 
+								<li><a href="misyonvizyon.html">Misyon-Vizyon</a></li>
+                                                                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+								<li><a href="iletisim.html">İletişim</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="search_box pull-right">
+							<input type="text" placeholder="Ürün arayın..."/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-bottom-->
+	</header><!--/header-->
+	
+	<section id="slider"><!--slider-->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div id="slider-carousel" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#slider-carousel" data-slide-to="0" class="active"></li>
+							<li data-target="#slider-carousel" data-slide-to="1"></li>
+							<li data-target="#slider-carousel" data-slide-to="2"></li>
+						</ol>
+						
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="col-sm-6">
+									<h1><span>HealthyLifestyle</span></h1>
+									<h2>Felas Şeker İlavesiz Granolamız 3'lü alımlarda sadece 99.90 TL</h2>
+									<p>%100 Doğal, Şeker İlavesiz, Yüksek Protein, Yüksek Lif, Katkısız ve Koruyucusuz. </p>
+									<button type="button" class="btn btn-default get">Şimdi Al</button>
+								</div>
+								<div class="col-sm-6">
+									<img src="images/home/slider1.jpg" class="girl img-responsive" alt="" />
+									
+								</div>
+							</div>
+							<div class="item">
+								<div class="col-sm-6">
+									<h1><span>HealthyLifestyle</span></h1>
+									<h2>Çörekotlu Karabuğday Patlağı (20 PAKET X 24 GRAM) sadece 199.90 TL</h2>
+									<p>%100 Doğal ve Katkısız Glutensiz Atıştırmalık. </p>
+									<button type="button" class="btn btn-default get">Şimdi Al</button>
+								</div>
+								<div class="col-sm-6">
+									<img src="images/home/slider2.png" class="girl img-responsive" alt="" />
+									
+								</div>
+							</div>
+							
+							<div class="item">
+								<div class="col-sm-6">
+									<h1><span>HealthyLifestyle</span></h1>
+									<h2>GLUTENSİZ FABRİKA YULAF & KARABUĞDAY GRANOLA 300 GRAM (YABANMERSİNLİ) 4'lü alımlarda 249.90 TL</h2>
+									<p>İlave şeker,Katkı maddesi,Koruyucu,Aroma verici ve Bağlayıcı kimyasal içermez! </p>
+									<button type="button" class="btn btn-default get">Şimdi Al</button>
+								</div>
+								<div class="col-sm-6">
+									<img src="images/home/slider3.png" class="girl img-responsive" alt="" />
+									
+								</div>
+							</div>
+							
+						</div>
+						
+						<a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
+							<i class="fa fa-angle-left"></i>
+						</a>
+						<a href="#slider-carousel" class="right control-carousel hidden-xs" data-slide="next">
+							<i class="fa fa-angle-right"></i>
+						</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section><!--/slider-->
+	
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="left-sidebar">
+						<h2>KATEGORİ</h2>
+						<div class="panel-group category-products" id="accordian"><!--category-productsr-->
+							
+							
+							
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="organikurunler.html">ORGANİK ÜRÜNLER</a></h4>
+                                                                         
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="glutensizurunler.html">GLUTENSİZ ÜRÜNLER</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="veganurunler.html">VEGAN ÜRÜNLER</a></h4>
+								</div>
+							</div>
+							
+						</div><!--/category-productsr-->
+					
+						<div class="brands_products"><!--brands_products-->
+							<h2>MARKALAR</h2>
+							<div class="brands-name">
+								<ul class="nav nav-pills nav-stacked">
+									<li><a href=""> <span class="pull-right">(7)</span>ÇİPO</a></li>
+									<li><a href=""> <span class="pull-right">(9)</span>LOFT</a></li>
+									<li><a href=""> <span class="pull-right">(11)</span>ZÜBER</a></li>
+									<li><a href=""> <span class="pull-right">(10)</span>GLUTENSİZ FABRİKA</a></li>
+									<li><a href=""> <span class="pull-right">(10)</span>FELLAS</a></li>
+									<li><a href=""> <span class="pull-right">(3)</span>TALYA FOODS</a></li>
+									<li><a href=""> <span class="pull-right">(7)</span>VEGAN DÜNYASI</a></li>
+									<li><a href=""> <span class="pull-right">(4)</span>NATURİGA</a></li>
+
+									
+								</ul>
+							</div>
+						</div><!--/brands_products-->
+                                            
+        
+    
+
+						
+						<div class="price-range"><!--price-range-->
+							<h2>FİYAT ARALIĞI</h2>
+							<div class="well">
+								 <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="600" data-slider-step="5" data-slider-value="[250,450]" id="sl2" ><br />
+								 <b> 0 TL</b> <b class="pull-right"> 600 TL</b>
+							</div>
+						</div><!--/price-range-->
+						
+						<div class="shipping text-center"><!--shipping-->
+							<img src="images/home/züber.png" alt="" />
+						</div><!--/shipping-->
+						
+					</div>
+				</div>
+				
+				<div class="col-sm-9 padding-right">
+					<div class="features_items"><!--features_items-->
+						<h2 class="title text-center">YENİ ÜRÜNLERİMİZ</h2>
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+										<div class="productinfo text-center">
+											<img src="images/home/ürün1.png" alt="" />
+											<h2>129.15 TL</h2>
+											<p>Fellas Vitamin & Meyve Bar - Turna Yemişi ve Kabak Çekirdeği 35g x 12 Adet</p>
+											<a href="urundetay3.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Sepete Ekle</a>
+										</div>
+										<div class="product-overlay">
+											<div class="overlay-content">
+												<h2>129.15 TL</h2>
+												<p>Vitamin & Meyve Bar - Turna Yemişi ve Kabak Çekirdeği 35g x 12 Adet</p>
+											<a href="urundetay3.html" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Sepete Ekle</a>
+											</div>
+										</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+											<img src="images/home/ürün2.png" alt="" />
+											<h2>186.95 TL</h2>
+											<p>Fellas Meyve Bar - Antep Fıstıklı Ve Kakaolu 40 Gr X 12 Adet(VEGAN)</p>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Sepete Ekle</a>
+										</div>
+										<div class="product-overlay">
+											<div class="overlay-content">
+												<h2>186.95 TL</h2>
+											<p>Fellas Meyve Bar - Antep Fıstıklı Ve Kakaolu 40 Gr X 12 Adet(VEGAN)</p>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Sepete Ekle</a>
+											</div>
+										</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+											<img src="images/home/ürün3.png" alt="" />
+											<h2>298 TL</h2>
+											<p>Züber Vişneli ve Pancarlı Sebzeli Meyve Tatlısı -35 gr x 12 Adet</p>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Sepete Ekle</a>
+										</div>
+										<div class="product-overlay">
+											<div class="overlay-content">
+												<h2>298 TL</h2>
+											<p>Züber Vişneli ve Pancarlı Sebzeli Meyve Tatlısı -35 gr x 12 Adet</p>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Sepete Ekle</a>
+											</div>
+										</div>
+								</div>
+								
+							</div>
+						</div>
+						
+						
+						
+						
+					</div><!--features_items-->
+					
+                                              <div class="col-sm-12 padding-right">
+					<div class="features_items"><!--features_items-->
+						<h2 class="title text-center">SİZİN İÇİN SEÇTİKLERİMİZ</h2>
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+										<div class="productinfo text-center">
+											<img src="images/home/ürün4.png" alt="" />
+											<h2>45.50 TL</h2>
+											<p>Züber Dmt Bar 40 Gr Elma Tarçın 1 Adet</p>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Sepete Ekle</a>
+										</div>
+										<div class="product-overlay">
+											<div class="overlay-content">
+												<h2>45.50 TL</h2>
+											<p>Züber Dmt Bar 40 Gr Elma Tarçın 1 Adet</p>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Sepete Ekle</a>
+											</div>
+										</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+											<img src="images/home/ürün5.png" alt="" />
+											<h2>45.50 TL</h2>
+											<p>Züber Fındık ve Kakaolu Meyve Tatlısı 40 gr</p>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Sepete Ekle</a>
+										</div>
+										<div class="product-overlay">
+											<div class="overlay-content">
+												<h2>45.50 TL</h2>
+											<p>Züber Fındık ve Kakaolu Meyve Tatlısı 40 gr</p>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Sepete Ekle</a>
+											</div>
+										</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+											<img src="images/home/ürün6.png" alt="" />
+											<h2>59.95 TL</h2>
+											<p>Fellas Kakao & Hindistan Cevizli Protein Bar 45 Gr</p>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Sepete Ekle</a>
+										</div>
+										<div class="product-overlay">
+											<div class="overlay-content">
+												<h2>59.95 TL</h2>
+											<p>Fellas Kakao & Hindistan Cevizli Protein Bar 45 Gr</p>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Sepete Ekle</a>
+											</div>
+										</div>
+								</div>
+								
+							</div>
+						</div>
+						
+					
+					
+				
+
+
+		
+					</div><!--features_items-->
+
+
+					
+					
+					<div class="recommended_items"><!--recommended_items-->
+						<h2 class="title text-center">AYIN ÜRÜNLERİ</h2>
+						
+						<div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner">
+								<div class="item active">	
+									<div class="col-sm-4">
+										<div class="product-image-wrapper">
+											<div class="single-products">
+												<div class="productinfo text-center">
+											<img src="images/home/ürün7.png" alt="" />
+											<h2>54 TL</h2>
+											<p>Naturiga Havuçlu Zerdeçallı Kraker 40 Gr - AROMASIZ</p>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Sepete Ekle</a>
+										</div>
+												
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="product-image-wrapper">
+											<div class="single-products">
+												<div class="productinfo text-center">
+											<img src="images/home/ürün8.png" alt="" />
+											<h2>55 TL</h2>
+											<p>Naturiga Unsuz Tohum Kraker Sade 40 gr AROMASIZ</p>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Sepete Ekle</a>
+										</div>
+												
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="product-image-wrapper">
+											<div class="single-products">
+												<div class="productinfo text-center">
+											<img src="images/home/ürün9.png" alt="" />
+											<h2>65 TL</h2>
+											<p>Naturiga Brownie Çıtırları 40 Gr</p>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Sepete Ekle</a>
+										</div>
+												
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">	
+									<div class="col-sm-4">
+										<div class="product-image-wrapper">
+											<div class="single-products">
+												<div class="productinfo text-center">
+											<img src="images/home/ürün10.png" alt="" />
+											<h2>74.72 TL</h2>
+											<p>Züber Kidz Meyve Küpü Orman Meyveli 49 gr </p>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Sepete Ekle</a>
+										</div>
+												
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="product-image-wrapper">
+											<div class="single-products">
+												<div class="productinfo text-center">
+											<img src="images/home/ürün11.png" alt="" />
+											<h2>67.90 TL</h2>
+											<p>Züber Kidz Meyve Küpü Muzlu 49 gr</p>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Sepete Ekle</a>
+										</div>
+												
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="product-image-wrapper">
+											<div class="single-products">
+												<div class="productinfo text-center">
+											<img src="images/home/ürün12.png" alt="" />
+											<h2>179 TL</h2>
+											<p>Züber Limonlu Lokma & Go 32 G X 16 </p>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Sepete Ekle</a>
+										</div>
+												
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							 <a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">
+								<i class="fa fa-angle-left"></i>
+							  </a>
+							  <a class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next">
+								<i class="fa fa-angle-right"></i>
+							  </a>			
+						</div>
+					</div><!--/recommended_items-->
+                                       
+                                  </div>     
+			</div>
+		</div>
+</div>  
+
+
+	  <section class="duyurular">
+        <div class="container">
+            <h2 class="title text-center">Duyurular/Fırsatlar/Kampanyalar</h2>
+
+            <!-- Duyuru 1 -->
+            <div class="duyuru">
+                 <img src="images/home/duyuru1.png" alt="Duyuru Resmi 1">
+                <h3>Fırsat Ürün:%20 indirim </h3>
+                <p>Açıklama: Yüksek lifli karabuğday patlağı ürünümüzü deneyin. Sadece bu hafta sonu geçerli, %20 indirim fırsatını kaçırmayın.</p>
+                  <button class="btn-acilir">Duyuru Detayları</button>
+                 <div class="acilir-pencere">
+                 
+                              <h3>Fırsat Ürün Kampanyasının Duyuru Detayları</h3>
+        <p>Sevgili müşterilerimiz, sizlere harika bir fırsat sunuyoruz! %20 indirimli ürünlerimizi kaçırmayın. Karabuğday patlağı ürünümüzün tadını çıkarın ve sağlıklı bir yaşama adım atın. Sadece bu hafta sonu için geçerli olan bu kampanya, sağlıklı beslenme yolculuğunuzda size eşlik edecek.</p>
+        <ul>
+            <li>Son Fırsat Tarihi: 2 Aralık</li>
+            <li>İndirim Oranı: %20</li>
+            <li>Ürün: Karabuğday Patlağı</li>
+            <li>Açıklama: Yüksek lifli ve lezzetli bir atıştırmalık olan karabuğday patlağı ile sağlıklı bir yaşamın kapılarını aralayın.</li>
+        </ul>
+        <p>Daha fazla bilgi için lütfen web sitemizi ziyaret edin veya bize ulaşın. Sağlıklı alışverişler dileriz!</p>
+        
+                       <br><br>
+                       
+                       <img src="images/home/duyuru1.png" alt="Duyuru Resmi 1">
+
+                   </div>
+                
+               
+            </div>
+
+            <!-- Duyuru 2 -->
+            <div class="duyuru">
+                <img src="images/home/duyuru2.png" alt="Duyuru Resmi 2">
+                <h3>Yeni Ürün: Vegan Enerji Barları</h3>
+                <p>Açıklama: Vegan enerji barlarımızı tanıtıyoruz!   İçeriğinde yüksek protein, glutensiz ve sağlıklı içeriği bulunan bu yeni ürünü deneyin. </p>
+<button class="btn-acilir">Duyuru Detayları</button>
+    <div class="acilir-pencere">
+        <h3>Yeni Ürünlerin Duyuru Detayları</h3>
+        <p>Sevgili müşterilerimiz, şimdi sizlere yeni bir ürün tanıtmaktan heyecan duyuyoruz! Vegan enerji barları, yüksek protein içeriği ve glutensiz özellikleri ile sağlıklı bir alternatif sunuyor. Bu ürünü denemek için şimdi sipariş verin.</p>
+        <ul>
+            <li>Ürün Adı: Vegan Enerji Barları</li>
+            <li>İçerik: Yüksek protein, glutensiz</li>
+            <li>Açıklama: Sağlıklı ve lezzetli bir atıştırmalık seçeneği ile enerjinizi yükseltin.</li>
+           <a href="duyuru2.docx">Duyuru Word Dosyası indirmek için tıklayın.</a>
+           <br><br>
+           <img src="images/home/duyuru2.png" alt="Duyuru Resmi 2">
+        </ul>
+    </div>
+                
+                
+            </div>
+
+            <!-- Duyuru 3 -->
+            <div class="duyuru">
+                <img src="images/home/duyuru3.png" alt="Duyuru Resmi 3">
+                <h3>Ücretsiz Kargo:350TL Üzeri</h3>
+                <p>Açıklama: 350 TL üzeri alışveriş yapan müşterilerimize ücretsiz kargo hizmeti sunuyoruz. Sağlıklı alışverişin keyfini çıkarın!  <p>
+                 <button class="btn-acilir">Duyuru Detayları</button>
+    <div class="acilir-pencere">
+        <h3>Ücretsiz Kargo Duyurusunun Detayları</h3>
+        <p>Değerli müşterilerimiz, sizi özel bir teklifle karşılıyoruz! 350 TL ve üzeri alışveriş yapan herkese ücretsiz kargo hizmeti sunuyoruz. Sağlıklı ürünlerimizi uygun fiyatlarla alın ve kargo ücreti ödemeyin.</p>
+        <ul>
+            <li>Ücretsiz Kargo Şartı: 350 TL ve üzeri alışveriş</li>
+            <li>Geçerlilik: 11 kasım 00.00 ile 12 Kasım 23.59 arasında geçerlidir.</li>
+            <li>Açıklama: Sağlıklı alışverişin keyfini çıkarın ve ücretsiz kargo avantajından faydalanın.</li>
+             <a href="duyuru3.pdf">Duyurunun ayrıntılı PDF'i için tıklayın.</a>
+             <br><br>
+             <img src="images/home/duyuru3.png" alt="Duyuru Resmi 3">
+              
+        </ul>
+    </div>
+                
+                
+            </div>
+
+            <!-- Duyuru 4 -->
+            <div class="duyuru">
+                <img src="images/home/duyuru33.png" alt="Duyuru Resmi 4">
+                <h3>Özel Kampanya: 3 Ürün Alana 1 Ürün Bedava</h3>
+                <p>Açıklama: Belirli ürünlerde özel bir kampanya sunuyoruz. 3 ürün alın, 4. ürünü bedava alın! Fırsatları kaçırmayın, sağlıklı alışverişin keyfini çıkarın!</p>
+                <button class="btn-acilir">Duyuru Detayları</button>
+    <div class="acilir-pencere">
+        <h3>3 Al 1 Bedava kampanyasının Duyuru Detayları</h3>
+        <p>Harika bir fırsatla karşınızdayız! Belirli ürünlerde özel bir kampanya sunuyoruz. Sadece 3 ürün alın ve 4. ürünü bedava alın. Kampanya süresi sınırlıdır, bu fırsatı kaçırmayın!</p>
+        <ul>
+            <li>Kampanya Şartı: 3 ürün alana 4. ürün bedava</li>
+            <li>Geçerlilik: 10 Ağustos 00.00 12 Ağustos 23.59 aralığında geçerlidir. </li>
+            <li>Açıklama: Özel kampanyamızla sağlıklı ürünlerimizi uygun fiyatlarla alın ve avantajdan faydalanın.</li>
+
+            <a href="duyuru4.pdf"> 3 Al 1 Bedava Kampanyasına dahil ürünlerin Duyuru PDF'i</a>
+            <br><br>
+            <img src="images/home/duyuru33.png" alt="Duyuru Resmi 4">
+        </ul>
+    </div>
+                
+                
+            </div>
+
+            <!-- Duyuru 5 -->
+            <div class="duyuru">
+                <img src="images/home/duyuru5.png" alt="Duyuru Resmi 5">
+                <h3>Sağlıklı Tarif Yarışması:</h3>
+                <p>Açıklama:Sağlıklı tarif yarışmamıza katılın, lezzetli yemeklerinizi paylaşın ve ödüller kazanın! Detaylar için sitemizi ziyaret edin. Yarışmamıza katılarak sağlıklı yemeklerle öne çıkın ve ödüllerin tadını çıkarın!</p>
+                <button class="btn-acilir">Duyuru Detayları</button>
+    <div class="acilir-pencere">
+        <h3>Sağlıklı Tarif Yarışmasının Duyuru Detayları</h3>
+        <p>Sevgili müşterilerimiz, sağlıklı yemeklerin ustası olduğunuzu gösterme zamanı geldi! Katılın ve harika ödüller kazanma şansı yakalayın. Yarışmamıza katılarak sağlıklı tariflerinizi bizimle paylaşın. Kazananlar arasında büyük ödüller var, bu fırsatı kaçırmayın!</p>
+        <ul>
+            <li>Yarışma Adı: Sağlıklı Tarif Yarışması</li>
+            <li>Katılım Süresi:22 TEMMUZ 19.00 KADAR</li>
+            <li>Ödüller: 1.YARIM ALTIN 2.ÇEYREK ALTIN 3.GRAM ALTIN</li>
+            <li>Detaylar: Yarışma kuralları ve katılım koşulları için web sitemizi ziyaret edin.</li>
+             <a href="duyuru5.pdf">Sağlıklı Tarif Yarışmasının Duyuru PDF'i</a>
+             <br><br>
+             <img src="images/home/duyuru5.png" alt="Duyuru Resmi 5">
+        </ul>
+    </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Duyurular sayfasına yönlendiren buton -->
+
+<a class="btn btn-primary" href="duyurular.html" style="float: right; margin: 20px;">Tüm Duyuruları Gör</a>
+
+	<br><br><br><br><br><br><br><br><br><br><br>
+
+<footer id="footer"><!--Footer-->
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="companyinfo">
+                            <h2><span>HealthyLifestyle</span></h2>
+                            <p>"Sağlık Her Şeydir, HealtyLifestyle Her Yerdedir"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-2">
+                        <div class="single-widget">
+                            <h2>KATEGORİLER</h2>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#">Organik Ürünler</a></li>
+                                <li><a href="#">Glutensiz Ürünler</a></li>
+                                <li><a href="#">Vegan Ürünler</a></li>
+                                <li><a href="#">Anne ve Bebek Ürünleri</a></li>
+                                <li><a href="#">Temel Gıda</a></li>
+                                <li><a href="#">Düşük Proteinli Ürünler</a></li>
+                              
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-2">
+                        <div class="single-widget">
+                            <h2>BLOG & TARİFLER</h2>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#">Blog Yazıları</a></li>
+                                <li><a href="#">Glutensiz Tarifler</a></li>
+                                <li><a href="#">Şekersiz Tarifler</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-2">
+                        <div class="single-widget">
+                            <h2>Hızlı Bağlantılar</h2>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#">Markalarımız</a></li>
+                                <li><a href="#">Hakkımızda</a></li>
+                                <li><a href="#">Sıkça Sorulan Sorular</a></li>
+                                <li><a href="#">Teslimat Koşulları</a></li>
+                                <li><a href="#">Üyelik Sözleşmesi</a></li>
+                                <li><a href="#">Satış Sözleşmesi</a></li>
+                                <li><a href="#">Garanti ve İade Koşulları</a></li>
+                                <li><a href="#">Gizlilik ve Güvenlik</a></li>
+                                <li><a href="#">Hizmet Şartları</a></li>
+                                <li><a href="#">Para İade Politikası</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-2">
+                        <div class="single-widget">
+                            <h2>İLETİŞİM BİLGİLERİ</h2>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li>
+                                    <p><i class="fas fa-map-marker-alt"></i> Adres: Kocaeli/İzmit <br> Geniş Mah.Dar Sokak<br> No 67213 </p>
+                                </li>
+                                <li>
+                                    <p><i class="fas fa-phone-square"></i> Telefon: <a href="tel:+905123456789">+90 512 345 6789</a></p>
+                                </li>
+                                <li>
+                                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:info@healthylifestyle.com">info@healthylifestyle.com</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <div class="single-widget">
+                            <h2>Sosyal Medya</h2>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i> Google Plus</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="single-widget">
+                        <p>Web sitemiz, e-Tasarım Ekibi tarafından tasarlanmıştır. En iyi web tasarım hizmetleri için bize ulaşın: <a href="http://www.etasarimekibi.com">www.etasarimekibi.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer><!--/Footer-->
+
+	
+<script>
+// İlk ürün slaytı için tıklama işlemi
+document.querySelector('.item:nth-child(1) .btn').addEventListener('click', function() {
+    // İlgili ürün sayfasına yönlendirme
+    window.location.href = 'slider1.html';
+});
+
+// İkinci ürün slaytı için tıklama işlemi
+document.querySelector('.item:nth-child(2) .btn').addEventListener('click', function() {
+    // İlgili ürün sayfasına yönlendirme
+    window.location.href = 'slider2.html';
+});
+
+// Üçüncü ürün slaytı için tıklama işlemi
+document.querySelector('.item:nth-child(3) .btn').addEventListener('click', function() {
+    // İlgili ürün sayfasına yönlendirme
+    window.location.href = 'slider3.html';
+});
+</script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const acilirBtns = document.querySelectorAll('.btn-acilir');
+            const acilirPencereler = document.querySelectorAll('.acilir-pencere');
+
+            acilirBtns.forEach(function (btn, index) {
+                btn.addEventListener('click', function () {
+                    acilirPencereler[index].style.display = 'block';
+                });
+            });
+
+            acilirPencereler.forEach(function (pencere) {
+                pencere.addEventListener('click', function () {
+                    pencere.style.display = 'none';
+                });
+            });
+        });
+    </script>
+
+  
+    <script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/price-range.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
